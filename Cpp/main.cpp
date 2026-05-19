@@ -4,7 +4,7 @@
 
 using namespace std;
 
-// 
+// Creación de la clase Estudiante
 class Estudiante {
 private:
     string cedula;
@@ -13,7 +13,7 @@ private:
     float nota1, nota2, nota3;
 
 public:
-    
+    // Constructor
     Estudiante(string c, string n, string a, float n1, float n2, float n3) {
         cedula = c;
         nombre = n;
@@ -23,7 +23,7 @@ public:
         nota3 = n3;
     }
 
-    
+    // Métodos Get y Set
     void setCedula(string c) { cedula = c; }
     string getCedula() { return cedula; }
     
@@ -37,12 +37,12 @@ public:
         nota1 = n1; nota2 = n2; nota3 = n3;
     }
 
-    // 
+    // Método para calcular el promedio
     float calcularPromedio() {
         return (nota1 + nota2 + nota3) / 3.0;
     }
 
-    // 
+    // Método para determinar si aprueba o reprueba
     string determinarEstado() {
         if (calcularPromedio() >= 7.00) {
             return "Aprobado";
@@ -51,7 +51,7 @@ public:
         }
     }
 
-    // 
+    // Método para mostrar la información del estudiante
     void mostrarInformacion() {
         cout << "\nCedula: " << cedula << " | Nombre: " << nombre << " " << apellido;
         cout << "\nNotas: " << nota1 << ", " << nota2 << ", " << nota3;
@@ -59,7 +59,7 @@ public:
     }
 };
 
-// 
+// Función para validar que las notas estén entre 0 y 10
 float leerNotaValida(string mensaje) {
     float nota;
     do {
@@ -74,11 +74,11 @@ float leerNotaValida(string mensaje) {
 
 int main() {
     vector<Estudiante> listaEstudiantes;
-    int cantidad = 5; 
+    int cantidad = 5; // Mínimo 5 estudiantes requeridos
 
     cout << "--- SISTEMA DE CONTROL DE ESTUDIANTES Y CALIFICACIONES ---\n";
 
-    // 
+    // Registro de estudiantes
     for (int i = 0; i < cantidad; i++) {
         string ced, nom, ape;
         float n1, n2, n3;
@@ -96,7 +96,7 @@ int main() {
         listaEstudiantes.push_back(nuevoEstudiante);
     }
 
-    // 
+    // Mostrar el listado completo y contadores
     cout << "\n--- LISTADO COMPLETO DE ESTUDIANTES ---\n";
     int aprobados = 0, reprobados = 0;
 
