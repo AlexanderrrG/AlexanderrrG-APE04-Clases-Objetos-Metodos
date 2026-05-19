@@ -1,6 +1,6 @@
 # Sistema de Control de Estudiantes - Versión C++
 
-Esta carpeta contiene la implementación en C++ del APE 04. Se ha utilizado la clase `Estudiante` y la librería `<vector>` para el manejo dinámico de los registros.
+Esta carpeta contiene la implementación en C++ del APE 04 Hecha en visual Code. Se ha utilizado la clase `Estudiante` y la librería `<vector>` para el manejo dinámico de los registros.
 
 ## Archivos
 - `main.cpp`: Contiene la declaración de la clase, los métodos y la función principal (`main`) para la ejecución del programa.
