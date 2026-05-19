@@ -1,10 +1,9 @@
-
 import java.util.Scanner;
 import java.util.ArrayList;
 
 public class Main {
     
-    
+    // Función para validar que las notas estén entre 0 y 10
     public static double leerNotaValida(Scanner sc, String mensaje) {
         double nota;
         do {
@@ -20,7 +19,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         ArrayList<Estudiante> listaEstudiantes = new ArrayList<>();
-        int cantidad = 5; 
+        int cantidad = 5; // Registrar mínimo 5 estudiantes
 
         System.out.println("--- SISTEMA DE CONTROL DE ESTUDIANTES Y CALIFICACIONES ---");
 
@@ -37,7 +36,7 @@ public class Main {
             double n2 = leerNotaValida(sc, "Nota 2 (0-10): ");
             double n3 = leerNotaValida(sc, "Nota 3 (0-10): ");
 
-            
+            // Aquí se crea el objeto usando la clase del otro archivo
             Estudiante est = new Estudiante(ced, nom, ape, n1, n2, n3);
             listaEstudiantes.add(est);
         }
