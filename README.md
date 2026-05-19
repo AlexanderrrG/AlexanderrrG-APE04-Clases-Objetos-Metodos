@@ -10,7 +10,7 @@
 
 ---
 
-## 📝 Descripción del Proyecto
+## 📝 Descripción del Trabajo
 Este repositorio contiene el desarrollo de la Guía Práctica **APE 04**. Consiste en un sistema básico de control de estudiantes y calificaciones desarrollado bajo el paradigma de **Programación Orientada a Objetos (POO)**. 
 
 El programa permite registrar estudiantes, ingresar sus 3 notas, calcular automáticamente el promedio y determinar su estado final (*Aprobado* o *Reprobado*).
