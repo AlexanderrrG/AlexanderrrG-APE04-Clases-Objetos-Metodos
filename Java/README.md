@@ -2,7 +2,7 @@
 ---
 
 ### 3. `README.md` para Java (En la carpeta `Java/`)
-Este archivo detalla cómo compilar las clases en Java, ya que este lenguaje utiliza múltiples archivos.
+Este archivo detalla cómo compilar las clases en Java, ya que este lenguaje utiliza múltiples archivos.De las cuales se baso para hacer el sistema que regsitra estudiantes
 
 ```markdown
 # Sistema de Control de Estudiantes - Versión Java
