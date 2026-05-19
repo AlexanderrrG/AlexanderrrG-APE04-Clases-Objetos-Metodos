@@ -1,1 +1,3 @@
-
+git add capturas/tu-nuevo-nombre.png
+git commit -m "Agregar captura de pantalla de ejecución"
+git push origin main
